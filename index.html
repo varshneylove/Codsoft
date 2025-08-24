@@ -1,439 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Love Varshney | Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
-    <style>
-        /* Google Fonts */
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;800&display=swap');
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sixteen Years of One Direction</title>
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Inter', sans-serif;
-        }
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
-        :root {
-            --color-white: #ffffff;
-            --color-light: #a1a1aa;
-            --color-primary: #12e12e;
-            --color-dark: #212121;
-            --color-bg: #0f172a;
-        }
+  <!-- Font Awesome for Icons -->
+  <script src="https://kit.fontawesome.com/f9c49325e6.js" crossorigin="anonymous"></script>
 
-        body {
-            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-            color: var(--color-white);
-            line-height: 1.6;
-        }
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+      scroll-behavior: smooth;
+    }
 
-        /* Navbar */
-        nav {
-            width: 100%;
-            padding: 20px 8%;
-            background: rgba(0, 0, 0, 0.6);
-            position: fixed;
-            top: 0;
-            left: 0;
-            z-index: 1000;
-            transition: 0.3s;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+    body {
+      background: url("pic.jpg") no-repeat center center/cover;
+      min-height: 100vh;
+      color: #fff;
+    }
 
-        nav .logo {
-            font-size: 24px;
-            font-weight: 700;
-            color: white;
-        }
+    /* Navbar */
+    .menu-bar {
+      background: linear-gradient(90deg, rgba(0,0,0,0.7), rgba(50,50,50,0.7));
+      padding: 15px 5%;
+      display: flex;
+      justify-content: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      backdrop-filter: blur(6px);
+    }
 
-        nav .logo span {
-            color: var(--color-primary);
-            text-shadow: 0 0 8px blueviolet;
-        }
+    .menu-bar ul {
+      display: flex;
+      gap: 30px;
+    }
 
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 25px;
-        }
+    .menu-bar ul li {
+      list-style: none;
+      cursor: pointer;
+      font-size: 18px;
+      color: #fff;
+      font-weight: 500;
+      transition: color 0.3s, transform 0.3s;
+    }
 
-        nav ul li a {
-            color: var(--color-white);
-            text-decoration: none;
-            font-size: 16px;
-            transition: 0.3s;
-        }
+    .menu-bar ul li:hover {
+      color: #ffd700;
+      transform: translateY(-3px);
+    }
 
-        nav ul li a:hover {
-            color: var(--color-primary);
-        }
+    /* Hero Section */
+    .paragraph {
+      font-size: 42px;
+      text-align: center;
+      margin-top: 80px;
+      letter-spacing: 2px;
+      font-weight: 600;
+      animation: fadeIn 2s ease-in;
+    }
 
-        .naWinScroll {
-            background: rgba(15, 23, 42, 0.95);
-            backdrop-filter: blur(6px);
-        }
+    .paragraph2 {
+      font-size: 65px;
+      text-align: center;
+      background: linear-gradient(45deg, #ff4b2b, #ff416c);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin: 10px 0;
+      animation: slideDown 1.5s ease;
+    }
 
-        /* Header / Hero */
-        header {
-            margin-top: 120px;
-            padding: 60px 8%;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            align-items: center;
-            gap: 40px;
-        }
+    .paragraph5 {
+      text-align: center;
+      margin: 20px auto;
+      font-size: 18px;
+      max-width: 850px;
+      line-height: 1.8;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 25px;
+      border-radius: 12px;
+      backdrop-filter: blur(5px);
+      animation: fadeIn 3s ease-in;
+    }
 
-        .header-left h1 {
-            font-size: 42px;
-            margin-bottom: 15px;
-        }
+    /* Button */
+    .lets-go-btn {
+      display: block;
+      width: fit-content;
+      margin: 25px auto;
+      padding: 12px 35px;
+      background: linear-gradient(45deg, #2575fc, #6a11cb);
+      color: white;
+      font-size: 20px;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 30px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      transition: transform 0.3s, background 0.3s;
+    }
 
-        .header-left h1 span {
-            color: var(--color-primary);
-        }
+    .lets-go-btn:hover {
+      transform: scale(1.1);
+      background: linear-gradient(45deg, #6a11cb, #2575fc);
+    }
 
-        .header-left h5 {
-            font-size: 18px;
-            color: #3f83f8;
-            margin-bottom: 15px;
-        }
+    /* Footer */
+    .footer {
+      margin-top: 50px;
+      background: rgba(0, 0, 0, 0.85);
+      padding: 30px 10%;
+      text-align: center;
+    }
 
-        .header-left p {
-            max-width: 500px;
-            margin-bottom: 20px;
-            color: var(--color-light);
-        }
+    .icons a {
+      margin: 0 15px;
+      font-size: 32px;
+      transition: transform 0.3s;
+    }
 
-        .header-action-area {
-            margin-top: 15px;
-            display: flex;
-            gap: 15px;
-        }
+    .icons a:hover {
+      transform: scale(1.2);
+    }
 
-        .btn {
-            display: inline-block;
-            padding: 12px 22px;
-            border-radius: 6px;
-            border: 1px solid white;
-            color: white;
-            transition: 0.3s;
-            text-decoration: none;
-        }
+    .p1 {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #ccc;
+    }
 
-        .btn:hover {
-            background: white;
-            color: var(--color-bg);
-        }
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
 
-        .btn-primary {
-            background: var(--color-primary);
-            border: none;
-            color: black;
-        }
+    @keyframes slideDown {
+      from { transform: translateY(-40px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
 
-        .header-right img {
-            width: 320px;
-            border-radius: 15px;
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
-        }
-
-        /* Sections */
-        section {
-            padding: 80px 8%;
-            text-align: center;
-        }
-
-        section h1,
-        section h2 {
-            font-size: 30px;
-            margin-bottom: 20px;
-            color: var(--color-primary);
-        }
-
-        section span {
-            color: #3f83f8;
-        }
-
-        /* About */
-        .about-content {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 20px;
-            margin-top: 30px;
-        }
-
-        .about-article {
-            background: #1e293b;
-            padding: 20px;
-            border-radius: 12px;
-            text-align: center;
-        }
-
-        .about-article img {
-            width: 40px;
-            margin-bottom: 10px;
-        }
-
-        /* Services */
-        .services-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-        }
-
-        .services-article {
-            background: #1e293b;
-            padding: 20px;
-            border-radius: 12px;
-        }
-
-        /* Skills */
-        .skills-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-            gap: 15px;
-        }
-
-        .services-article img {
-            width: 100%;
-            max-width: 180px;
-            height: 180px;
-            object-fit: contain;
-            margin-bottom: 15px;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-
-        .skill-article {
-            background: #1e293b;
-            padding: 15px;
-            border-radius: 8px;
-        }
-
-        /* Blog */
-        .row .content {
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-            margin-top: 20px;
-        }
-
-        .card {
-            background: #1e293b;
-            padding: 20px;
-            border-radius: 12px;
-            flex: 1;
-            min-width: 250px;
-        }
-
-        .card img {
-            width: 100%;
-            border-radius: 10px;
-            margin-bottom: 15px;
-        }
-
-        /* Contact */
-        form {
-            max-width: 700px;
-            margin: auto;
-        }
-
-        form input,
-        form textarea {
-            width: 100%;
-            margin: 10px 0;
-            padding: 12px;
-            border-radius: 6px;
-            border: none;
-        }
-
-        button {
-            padding: 12px 24px;
-            border-radius: 6px;
-            border: none;
-            background: var(--color-primary);
-            color: black;
-            cursor: pointer;
-            font-weight: 600;
-        }
-
-        footer {
-            text-align: center;
-            padding: 15px;
-            background: #0f172a;
-            margin-top: 40px;
-        }
-    </style>
+    /* Responsive */
+    @media (max-width: 768px) {
+      .paragraph { font-size: 26px; }
+      .paragraph2 { font-size: 40px; }
+      .paragraph5 { font-size: 15px; padding: 18px; }
+      .menu-bar ul { flex-wrap: wrap; gap: 15px; }
+    }
+  </style>
 </head>
-
 <body>
-    <!-- Navbar -->
-    <nav>
-        <div class="logo">Love<span>Varshney</span></div>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#blog">Blog</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
 
-    <!-- Hero -->
-    <header id="home">
-        <div class="header-left">
-            <h1>Hello, I’m <span>Love Varshney</span></h1>
-            <h5>Frontend Developer | Problem Solver | Tech Enthusiast</h5>
-            <p>Proficient in HTML, CSS, JavaScript, and React.js with experience on Windows & Linux. Passionate about
-                building scalable solutions that drive innovation.</p>
-            <div class="header-action-area">
-                <a href="cv.pdf" download class="btn btn-primary">Download CV</a>
-                <a href="#about" class="btn">Read More</a>
-            </div>
-        </div>
-        <div class="header-right">
-            <img src="pic.jpg" alt="Love Varshney">
-        </div>
-    </header>
+  <!-- Navbar -->
+  <div class="menu-bar">     
+    <ul>
+      <li>Music</li>
+      <li>Band</li>
+      <li>Tour</li>
+      <li>Journal</li>
+      <li>Shop</li>
+      <li>Newsletter</li> 
+    </ul>
+  </div>
 
-    <!-- About -->
-    <section id="about">
-        <h1><span>A</span>bout Me</h1>
-        <p>I'm a diligent <span>Frontend Developer</span>, passionately refining my <span>CSS, HTML</span>, and
-            <span>React</span> skills. My goal is to create captivating, responsive, and user-friendly web interfaces.
-        </p>
-        <div class="about-content">
-            <article class="about-article"><img src="man.png">
-                <h5>FULL NAME</h5>
-                <p>Love Varshney</p>
-            </article>
-            <article class="about-article"><img src="email.png">
-                <h5>EMAIL</h5>
-                <p>lovevarshney@gmail.com</p>
-            </article>
-            <article class="about-article"><img src="linkedin.png">
-                <h5>LinkedIn</h5>
-                <p>linkedin.com/in/yourprofile</p>
-            </article>
-            <article class="about-article"><img src="telephone-call.png">
-                <h5>PHONE</h5>
-                <p>+91 9720028781</p>
-            </article>
-        </div>
-    </section>
+  <!-- Hero Section -->
+  <h1 class="paragraph">Sixteen YEARS OF</h1>
+  <h2 class="paragraph2">ONE DIRECTION</h2>
 
-    <!-- Services -->
-    <!-- Services -->
-    <section id="services">
-        <h1><span>W</span>hat I Do</h1>
-        <div class="services-container">
-            <article class="services-article">
-                <img src="software.png" alt="Software Development">
-                <h2>Software Development</h2>
-                <p>Designing, coding, testing, and maintaining software applications.</p>
-            </article>
-            <article class="services-article">
-                <img src="coding.png" alt="Web Development">
-                <h2>Web Development</h2>
-                <p>Crafting responsive websites with great user experience.</p>
-            </article>
-            <article class="services-article">
-                <img src="python.png" alt="Python Programming">
-                <h2>Python Programming</h2>
-                <p>Applied in ML, Data Science, Web Development and more.</p>
-            </article>
-        </div>
-    </section>
+  <p class="paragraph5">
+    Welcome to the official Sixteen Years Of One Direction website. Visit for the archived<br>
+    journal posts, past events, band photos, as well as all their music, singles and albums.<br>
+    Celebrate Sixteen years of One Direction by rediscovering their journey,<br>
+    right from the very beginning. Keep an eye out for hidden surprises!<br>
+    Relive your favourite 1D memories here and get your own personalised,<br>
+    extra-special anniversary mixtape by connecting to your Spotify, Apple Music,<br>
+    SoundCloud and Deezer!
+  </p>
 
+  <a href="#" class="lets-go-btn">LET'S GO</a>
 
-    <!-- Skills -->
-    <section id="skills">
-        <h1><span>M</span>y Skills</h1>
-        <div class="skills-container">
-            <article class="skill-article">
-                <h4>HTML</h4>
-            </article>
-            <article class="skill-article">
-                <h4>CSS</h4>
-            </article>
-            <article class="skill-article">
-                <h4>JavaScript</h4>
-            </article>
-            <article class="skill-article">
-                <h4>React</h4>
-            </article>
-            <article class="skill-article">
-                <h4>MySQL</h4>
-            </article>
-            <article class="skill-article">
-                <h4>Python</h4>
-            </article>
-        </div>
-    </section>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="icons">
+      <a style="color: #0ac623;" href="#"><i class="fa-brands fa-spotify"></i></a> 
+      <a style="color: #aaa;" href="#"><i class="fa-brands fa-apple"></i></a>
+      <a style="color: #ef4f0b;" href="#"><i class="fa-brands fa-soundcloud"></i></a>
+      <a style="color: floralwhite;" href="#"><i class="fa-brands fa-deezer"></i></a>
+    </div> 
 
-    <!-- Projects -->
-    <section id="projects">
-        <h1><span>P</span>rojects</h1>
-        <div class="project-card">
-            <h3>Portfolio Website</h3>
-            <p>Designed and developed a personal portfolio showcasing my skills.</p>
-        </div>
-        <div class="project-card">
-            <h3>Calculator App</h3>
-            <p>A responsive calculator built using JavaScript.</p>
-        </div>
-    </section>
+    <div class="p1">
+      SYCO MUSIC &copy;<span id="year"></span> SONY MUSIC ENTERTAINMENT UK LTD | PRIVACY AND COOKIE POLICY
+    </div>
+  </footer>
 
-    <!-- Blog -->
-    <!-- <section id="blog">
-        <div class="row">
-            <div class="header">
-                <h1>B<span>log</span></h1>
-                <p>Explore web design, front-end development, and more.</p>
-            </div>
-            <div class="content">
-                <div class="card"><img src="web1.jpg">
-                    <p>Web design blends typography, color, and layout for great UX.</p>
-                </div>
-                <div class="card"><img src="web2.jpg">
-                    <p>Responsive design ensures consistency across devices.</p>
-                </div>
-            </div>
-        </div>
-    </section> -->
+  <!-- Script for Auto Year -->
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 
-    <!-- Contact -->
-    <section id="contact">
-        <h1><span>Get</span> In Touch</h1>
-        <form>
-            <input type="text" placeholder="First Name" required>
-            <input type="text" placeholder="Last Name" required>
-            <input type="email" placeholder="Email" required>
-            <input type="number" placeholder="Phone Number" required>
-            <textarea name="message" placeholder="Message"></textarea>
-            <button type="submit">Submit Now</button>
-        </form>
-    </section>
-
-    <footer>&copy; Love Varshney</footer>
-
-    <script>
-        // Navbar background on scroll
-        let nav = document.querySelector('nav');
-        window.addEventListener('scroll', () => {
-            nav.classList.toggle('naWinScroll', window.scrollY > 0);
-        });
-    </script>
 </body>
-
 </html>
