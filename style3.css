@@ -1,0 +1,126 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: #0f172a;
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 8%;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+  transition: 0.4s;
+}
+
+nav .logo {
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+}
+
+nav .logo span {
+  color: #3f83f8;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 25px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #12e12e;
+}
+
+.naWinScroll {
+  background: rgba(15, 23, 42, 0.95);
+  backdrop-filter: blur(6px);
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 120px 8% 60px;
+  min-height: 100vh;
+}
+
+.header-left h1 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.header-left h1 span {
+  color: #12e12e;
+}
+
+.header-left h5 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #3f83f8;
+}
+
+.header-left p {
+  max-width: 500px;
+  margin-bottom: 20px;
+}
+
+.name span:hover {
+  color: #3f83f8;
+  text-shadow: 0px 0px 15px #12e12e;
+  transition: 0.3s;
+}
+
+.header-right img {
+  width: 320px;
+  border-radius: 15px;
+  padding: 8px;
+  background: linear-gradient(135deg, #12e12e, #3f83f8);
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* Sections */
+section {
+  padding: 80px 8%;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #3f83f8;
+}
+
+.project-card {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 12px;
+  margin: 15px 0;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
