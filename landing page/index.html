@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sixteen Years of One Direction</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome for Icons -->
+  <script src="https://kit.fontawesome.com/f9c49325e6.js" crossorigin="anonymous"></script>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: url("pic.jpg") no-repeat center center/cover;
+      min-height: 100vh;
+      color: #fff;
+    }
+
+    /* Navbar */
+    .menu-bar {
+      background: linear-gradient(90deg, rgba(0,0,0,0.7), rgba(50,50,50,0.7));
+      padding: 15px 5%;
+      display: flex;
+      justify-content: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      backdrop-filter: blur(6px);
+    }
+
+    .menu-bar ul {
+      display: flex;
+      gap: 30px;
+    }
+
+    .menu-bar ul li {
+      list-style: none;
+      cursor: pointer;
+      font-size: 18px;
+      color: #fff;
+      font-weight: 500;
+      transition: color 0.3s, transform 0.3s;
+    }
+
+    .menu-bar ul li:hover {
+      color: #ffd700;
+      transform: translateY(-3px);
+    }
+
+    /* Hero Section */
+    .paragraph {
+      font-size: 42px;
+      text-align: center;
+      margin-top: 80px;
+      letter-spacing: 2px;
+      font-weight: 600;
+      animation: fadeIn 2s ease-in;
+    }
+
+    .paragraph2 {
+      font-size: 65px;
+      text-align: center;
+      background: linear-gradient(45deg, #ff4b2b, #ff416c);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin: 10px 0;
+      animation: slideDown 1.5s ease;
+    }
+
+    .paragraph5 {
+      text-align: center;
+      margin: 20px auto;
+      font-size: 18px;
+      max-width: 850px;
+      line-height: 1.8;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 25px;
+      border-radius: 12px;
+      backdrop-filter: blur(5px);
+      animation: fadeIn 3s ease-in;
+    }
+
+    /* Button */
+    .lets-go-btn {
+      display: block;
+      width: fit-content;
+      margin: 25px auto;
+      padding: 12px 35px;
+      background: linear-gradient(45deg, #2575fc, #6a11cb);
+      color: white;
+      font-size: 20px;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 30px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      transition: transform 0.3s, background 0.3s;
+    }
+
+    .lets-go-btn:hover {
+      transform: scale(1.1);
+      background: linear-gradient(45deg, #6a11cb, #2575fc);
+    }
+
+    /* Footer */
+    .footer {
+      margin-top: 50px;
+      background: rgba(0, 0, 0, 0.85);
+      padding: 30px 10%;
+      text-align: center;
+    }
+
+    .icons a {
+      margin: 0 15px;
+      font-size: 32px;
+      transition: transform 0.3s;
+    }
+
+    .icons a:hover {
+      transform: scale(1.2);
+    }
+
+    .p1 {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #ccc;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-40px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .paragraph { font-size: 26px; }
+      .paragraph2 { font-size: 40px; }
+      .paragraph5 { font-size: 15px; padding: 18px; }
+      .menu-bar ul { flex-wrap: wrap; gap: 15px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="menu-bar">     
+    <ul>
+      <li>Music</li>
+      <li>Band</li>
+      <li>Tour</li>
+      <li>Journal</li>
+      <li>Shop</li>
+      <li>Newsletter</li> 
+    </ul>
+  </div>
+
+  <!-- Hero Section -->
+  <h1 class="paragraph">Sixteen YEARS OF</h1>
+  <h2 class="paragraph2">ONE DIRECTION</h2>
+
+  <p class="paragraph5">
+    Welcome to the official Sixteen Years Of One Direction website. Visit for the archived<br>
+    journal posts, past events, band photos, as well as all their music, singles and albums.<br>
+    Celebrate Sixteen years of One Direction by rediscovering their journey,<br>
+    right from the very beginning. Keep an eye out for hidden surprises!<br>
+    Relive your favourite 1D memories here and get your own personalised,<br>
+    extra-special anniversary mixtape by connecting to your Spotify, Apple Music,<br>
+    SoundCloud and Deezer!
+  </p>
+
+  <a href="#" class="lets-go-btn">LET'S GO</a>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="icons">
+      <a style="color: #0ac623;" href="#"><i class="fa-brands fa-spotify"></i></a> 
+      <a style="color: #aaa;" href="#"><i class="fa-brands fa-apple"></i></a>
+      <a style="color: #ef4f0b;" href="#"><i class="fa-brands fa-soundcloud"></i></a>
+      <a style="color: floralwhite;" href="#"><i class="fa-brands fa-deezer"></i></a>
+    </div> 
+
+    <div class="p1">
+      SYCO MUSIC &copy;<span id="year"></span> SONY MUSIC ENTERTAINMENT UK LTD | PRIVACY AND COOKIE POLICY
+    </div>
+  </footer>
+
+  <!-- Script for Auto Year -->
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
